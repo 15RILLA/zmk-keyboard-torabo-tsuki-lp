@@ -30,11 +30,11 @@
 
         ArrowsAndSpecialCharacters {
             bindings = <
-&trans  &trans     &trans            &trans      &trans      &trans                      &trans    &trans    &kp PAGE_UP    &trans     &trans   &trans
-&trans  &kp GRAVE  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                  &trans    &trans    &kp UP_ARROW   &trans     &trans   &kp EQUAL
-&trans  &kp N1     &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans  &kp HOME  &kp LEFT  &kp DOWN       &kp RIGHT  &kp END  &kp RIGHT_BRACKET
-&trans  &kp N6     &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans  &trans    &trans    &kp PAGE_DOWN  &trans     &trans   &kp BACKSLASH
-&trans  &trans     &trans            &trans      &trans      &trans      &trans  &trans  &trans    &trans    &trans         &trans     &trans   &trans
+&trans  &trans     &trans  &trans  &trans  &trans                  &trans    &trans    &kp PAGE_UP    &trans     &trans   &trans
+&trans  &kp GRAVE  &trans  &trans  &trans  &trans                  &trans    &trans    &kp UP_ARROW   &trans     &trans   &kp EQUAL
+&trans  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &trans  &trans  &kp HOME  &kp LEFT  &kp DOWN       &kp RIGHT  &kp END  &kp RIGHT_BRACKET
+&trans  &kp N6     &kp N7  &kp N8  &kp N9  &kp N0  &trans  &trans  &trans    &trans    &kp PAGE_DOWN  &trans     &trans   &kp BACKSLASH
+&trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans         &trans     &trans   &trans
             >;
         };
 
