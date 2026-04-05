@@ -9,8 +9,11 @@
     zip_scroll: zip_scroll {
         compatible = "zmk,input-processor-to-wheel";
         #input-processor-cells = <0>;
-        y-mult = <2>; // 縦スクロール速度（マイナスにすると反転）
-        x-mult = <2>; // 横スクロール速度
+        y-mult = <2>; 
+        x-mult = <2>; 
+    };
+    input_listener: input-listener {
+        compatible = "zmk,input-listener";
     };
 
 
