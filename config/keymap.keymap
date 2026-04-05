@@ -78,5 +78,3 @@
         };
     };
 };
-CONFIG_ZMK_MOUSE=y
-CONFIG_ZMK_MOUSE_SMOOTH_SCROLLING=y
