@@ -90,7 +90,7 @@
 };
 
 
-&trackball {
+&pointing_device{
     input-processors = <&zip_xy_scaler 1 1>;
     
     /* レイヤー 3 (Scrollレイヤー) の時だけ zip_scroll を適用 */
