@@ -2,9 +2,31 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
+//&pointing_listener {
+//    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+//};
+
+
 &pointing_listener {
+    // 通常時の設定（すでに記述されている反転設定）
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+
+    // ▼ ここからスクロールレイヤー用の設定を追加 ▼
+    scroll {
+        layers = <3>; // ※ご自身のスクロール用レイヤー番号に変更してください
+        
+        input-processors = 
+            // 1. まず通常時と同じようにX/Y軸を反転させる
+            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+            
+            // 2. 反転させたX/Y移動をスクロールイベントに変換する
+            <&zip_xy_to_scroll_mapper>,
+            
+            // 3. スクロールの速度を調整する（例: 1/4に減速）
+            <&zip_scroll_scaler 1 4>;
+    };
 };
+
 
 &size_s_transform {
     col-offset = <7>;
