@@ -7,21 +7,22 @@
 //};
 
 &pointing_listener {
-    // 通常時の設定（すでに記述されている反転設定）
+    // 通常時の設定（変更なし）
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 
-    // ▼ ここからスクロールレイヤー用の設定を追加 ▼
+    // ▼ スクロールレイヤー用の設定（ここを修正） ▼
     scroll {
-        layers = <3>; // ※ご自身のスクロール用レイヤー番号に変更してください
+        layers = <3>; // ※ご自身のスクロール用レイヤー番号
         
         input-processors = 
-            // 1. まず通常時と同じようにX/Y軸を反転させる
-            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+            // 1. 上下のスクロール方向を逆にするため、Y_INVERT を削除しました。
+            // （※もし左右も逆なら、この行を <&zip_xy_transform (0)> にしてください）
+            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>,
             
-            // 2. 反転させたX/Y移動をスクロールイベントに変換する
+            // 2. 移動をスクロールイベントに変換
             <&zip_xy_to_scroll_mapper>,
             
-            // 3. スクロールの速度を調整する（例: 1/4に減速）
-            <&zip_scroll_scaler 1 4>;
+            // 3. 速度をさらに遅くする（1/4 から 1/10 へ変更。数字は好みで調整可能です）
+            <&zip_scroll_scaler 1 10>;
     };
 };
