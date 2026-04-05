@@ -1,2 +1,6 @@
 
 #include "../../../config/keymap.keymap"
+
+&trackball {
+    input-processors = <&zip_temp_layer_nr 3 2000>;
+};
