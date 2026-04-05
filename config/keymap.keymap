@@ -12,8 +12,12 @@
         y-mult = <2>; 
         x-mult = <2>; 
     };
-    input_listener: input-listener {
+
+    /* ここを修正：スニペットがなくても動くように明示的に定義します */
+    /* ラベル名は input_listener (アンダースコア) です */
+    input_listener: input_listener {
         compatible = "zmk,input-listener";
+        device = <&pointing_device>; // さきほど overlay で見つけた名前
     };
 
 
@@ -93,8 +97,10 @@
 };
 
 
-&input-listener{
+&input_listener {
     input-processors = <&zip_xy_scaler 1 1>;
+    
+    /* レイヤー 3 (Scrollレイヤー) の時だけ zip_scroll を適用 */
     input-processors-limit = <3>; 
     input-processors-3 = <&zip_scroll>;
 };
