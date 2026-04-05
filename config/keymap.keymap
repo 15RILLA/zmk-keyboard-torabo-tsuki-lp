@@ -93,10 +93,8 @@
 };
 
 
-&{/input-listener}{
+&input-listener{
     input-processors = <&zip_xy_scaler 1 1>;
-    
-    /* レイヤー 3 (Scrollレイヤー) の時だけ zip_scroll を適用 */
     input-processors-limit = <3>; 
     input-processors-3 = <&zip_scroll>;
 };
