@@ -43,7 +43,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp RC(X)  &kp RC(C)  &kp RC(V)  &trans  &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mkp LCLK  &mkp RCLK  &trans  &kp RC(Z)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mkp MB4   &mkp MB5   &trans  &kp RC(Y)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &none      &trans
             >;
         };
 
