@@ -24,13 +24,13 @@
             <&zip_xy_to_scroll_mapper>,
             
             // 3. 速度をさらに遅くする（1/4 から 1/10 へ変更。数字は好みで調整可能です）
-            <&zip_scroll_scaler 1 7>;
+            <&zip_scroll_scaler 1 9>;
     };
 };
 
 
 &size_s_transform {
-    col-offset = <7>;
+    col-offset = <7h>;
 };
 
 &size_m_transform {
