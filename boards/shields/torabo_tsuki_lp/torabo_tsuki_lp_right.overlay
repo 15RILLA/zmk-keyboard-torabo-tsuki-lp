@@ -30,13 +30,13 @@
 
 
 &size_s_transform {
-    col-offset = <7h>;
+    col-offset = <9>;
 };
 
 &size_m_transform {
-    col-offset = <7>;
+    col-offset = <9>;
 };
 
 &size_l_transform {
-    col-offset = <7>;
+    col-offset = <9>;
 };
