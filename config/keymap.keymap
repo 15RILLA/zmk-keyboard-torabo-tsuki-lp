@@ -23,7 +23,7 @@
 &kp TAB           &kp Q             &kp L     &kp U     &kp COMMA   &kp PERIOD                               &kp F        &kp W      &kp R      &kp Y    &kp P              &kp SLASH
 &kp LEFT_CONTROL  &kp E             &kp I     &kp A     &kp O       &kp MINUS      &kp SPACE      &kp SPACE  &lt 3 K      &kp T      &kp N      &lt 2 S  &kp H              &kp LEFT_BRACKET
 &kp LSHFT         &mt LEFT_SHIFT Z  &kp X     &kp C     &kp V       &kp SEMICOLON  &kp LANG2      &kp LANG1  &kp G        &kp D      &kp M      &kp J    &mt RIGHT_SHIFT B  &kp SINGLE_QUOTE
-&kp LCTRL         &kp ESCAPE        &kp LGUI  &kp LALT  &kp DELETE  &lt 4 SPACE    &kp BACKSPACE  &kp ENTER  &lt 4 SPACE  &kp SPACE  &kp SPACE  &to 5    &tog 1             &kp RCTRL
+&kp LCTRL         &kp ESCAPE        &kp LGUI  &kp LALT  &kp DELETE  &lt 4 SPACE    &kp BACKSPACE  &kp ENTER  &lt 4 SPACE  &kp SPACE  &kp SPACE  &mo 5    &tog 1             &kp RCTRL
             >;
         };
 
